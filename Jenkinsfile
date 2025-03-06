@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Pull SRC") {
             steps {
-                git 'https://github.com/shrsyc/instagram-war.git'
+                git 'https://github.com/shrsyc/CI-CD-Pipeline-with-Jenkins-Ansible-and-Docker.git'
             }
         }
         stage("Prepare Build") {
