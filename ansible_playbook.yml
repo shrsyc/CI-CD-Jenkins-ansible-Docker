@@ -1,0 +1,17 @@
+---
+- name: Deploy to wrokers
+  hosts: dev
+  user: ansible
+  connection: ssh
+  gather_facts: false
+  become: yes  
+  tasks:
+
+    - name: Pull Docker image from Docker Hub
+      command: docker pull shrsyc/webtrial
+
+    - name: Stop and remove existing container
+      command: docker rm -f webtrial
+
+    - name: Run new container
+      command: docker run -d --name webtrial -p 8080:8080 shrsyc/webtrial
