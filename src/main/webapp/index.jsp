@@ -72,7 +72,7 @@
 
 
         <div class="info-content">
-          <h1 class="name" title="Shreyas C">Shreyas C</h1>
+          <h1 class="name" title="Shreyas C">Shreyas CG</h1>
 
           <p class="title">DevOps Engineer</p>
         </div>
