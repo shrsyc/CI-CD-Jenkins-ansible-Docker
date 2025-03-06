@@ -23,7 +23,7 @@ pipeline {
                     publishers: [
                         sshPublisherDesc(
                             configName: "marcos",
-                            transfers: [sshTransfer(sourceFiles: 'instagram.war')],
+                            transfers: [sshTransfer(sourceFiles: 'portfolio_web.war')],
                             verbose: true
                         )
                     ]
